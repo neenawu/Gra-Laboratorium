@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public int points = 0;
     public float Szybkosæ = 2.5f;
     public CharacterController controller;
     public Vector3 movement;
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     {
         
 ;
-        Debug.Log(Input.GetAxis("Horizontal"));
+      
 
         movement.z = -Input.GetAxis("Horizontal");
 
