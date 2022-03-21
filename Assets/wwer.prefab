@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3981449842312774841}
   - component: {fileID: 696497196550448290}
   - component: {fileID: 2530339089550207592}
+  - component: {fileID: 8652458936680060133}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0072a46330a223c479d2a3f92c841d68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,6 +96,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: -0.00000011920929, z: 0}
+--- !u!114 &8652458936680060133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4080641723312014894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c88a3a786370a4097cc51b14d4e990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 102
 --- !u!1 &8153453978670118371
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +121,7 @@ GameObject:
   - component: {fileID: 1800357475278194372}
   - component: {fileID: 6874578185021240988}
   - component: {fileID: 6047891046012803907}
+  - component: {fileID: 4037874679420016158}
   m_Layer: 0
   m_Name: wwer
   m_TagString: Untagged
@@ -186,9 +201,22 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8153453978670118371}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 4.34
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &4037874679420016158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153453978670118371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c88a3a786370a4097cc51b14d4e990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 102
