@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class ObjectAction : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class ObjectAction : MonoBehaviour
         {
 
             other.GetComponent<Player>().points += 1;
+            transform.DOScale(transform.localScale * 2f, 0.25f);
         }
     }
 
