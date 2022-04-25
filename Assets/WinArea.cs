@@ -8,9 +8,12 @@ public class WinArea : MonoBehaviour
 {
     public RectTransform winPanel;
     public string SampleScene;
+    public ParticleSystem particle;
     void Start()
     {
         winPanel.gameObject.SetActive(false);
+      
+
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class WinArea : MonoBehaviour
             if (enter.GetComponent<Player>().points>=2)
             {
                 winPanel.gameObject.SetActive(true);
+                particle.Play();
             }
             
         }
